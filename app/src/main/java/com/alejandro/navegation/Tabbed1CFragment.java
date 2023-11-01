@@ -1,4 +1,4 @@
-package com.alejandro.navegation;
+package com.company.navigation;
 
 import android.os.Bundle;
 

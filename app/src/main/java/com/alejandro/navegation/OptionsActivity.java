@@ -1,4 +1,4 @@
-package com.alejandro.navegation;
+package com.company.navigation;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,7 +9,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.alejandro.navegation.databinding.ActivityOptionsBinding;
+import com.company.navigation.databinding.ActivityOptionsBinding;
+
 
 public class OptionsActivity extends AppCompatActivity {
 

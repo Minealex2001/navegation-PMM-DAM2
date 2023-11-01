@@ -1,12 +1,14 @@
-package com.alejandro.navegation;
+package com.company.navigation;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
-import com.alejandro.navegation.databinding.ActivityBottomBinding;
+import com.company.navigation.databinding.ActivityBottomBinding;
+
 
 public class BottomActivity extends AppCompatActivity {
 
@@ -21,6 +23,11 @@ public class BottomActivity extends AppCompatActivity {
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
         NavigationUI.setupWithNavController(binding.bottomNavView, navController);
+
+        /* No actualiza el titulo la primera vez !*@!#*/
         NavigationUI.setupWithNavController(binding.toolbar, navController);
+
+        /* La ActionBar si que actualiza el titulo la primera vez */
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
     }
 }
